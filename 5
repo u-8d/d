@@ -1,0 +1,78 @@
+import java.util.*;
+
+class Student_vector
+
+{
+
+public static void main(String args[])
+
+{
+
+Scanner br=new Scanner(System.in);
+
+String str;
+
+Vector v=new Vector();
+
+int i,choice=0;
+
+System.out.println("Enter 5 names:");
+
+for(i=0;i<=4;i++)
+
+{
+
+ str=br.next();
+
+ v.addElement(str);
+
+}
+
+while(choice!=3)
+
+{
+
+System.out.println("1.Add new name\n2.Display name\n3.Exit");
+
+System.out.println("Enter your choice:");
+
+choice=br.nextInt();
+
+switch(choice)
+
+{
+
+case 1: System.out.println("Enter name:");
+
+str=br.next();
+
+v.addElement(str);
+
+break;
+
+case 2: 
+
+System.out.println("Current List:");
+for(i=0;i<=v.size()-1;i++) 
+
+{
+
+System.out.println(v.elementAt(i));
+
+} 
+
+case 3: 
+
+break;
+
+default: 
+
+System.out.println("Invalid choice");
+
+}
+
+}
+
+} 
+
+}

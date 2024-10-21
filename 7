@@ -1,0 +1,54 @@
+interface Department
+
+{
+
+ int m1=18,m2=19,m3=12;
+
+ 
+
+}
+
+interface Exam extends Department
+
+{
+
+int s1=67,s2=45,s3=71;
+
+void total_marks();
+
+}
+
+class Student_inter implements Department,Exam
+
+{
+
+public void total_marks()
+
+{
+int ds,cg,dlca;
+
+ds=m1+s1;
+
+cg=m2+s2;
+
+dlca=m3+s3;
+
+System.out.println("Marks of DS"+ds);
+
+System.out.println("Marks of CG"+cg);
+
+System.out.println("Marks of DLCA"+dlca);
+
+}
+
+public static void main(String args[])
+
+{
+
+Student_inter s=new Student_inter();
+
+s.total_marks();
+
+}
+
+}

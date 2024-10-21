@@ -1,0 +1,55 @@
+import java.lang.*;
+abstract class Figure
+{
+double dim1,dim2;
+ Figure(double a,double b)
+{
+dim1=a;
+dim2=b;
+}
+abstract double area();
+}
+class Rectangle extends Figure
+{
+
+double area;
+
+Rectangle(double a,double b)
+
+{
+
+super(a,b);
+
+}
+
+double area()
+
+{
+
+ area=dim1*dim2;
+
+ return area;
+
+}
+
+}
+
+class Figure_abstract
+
+{
+
+public static void main(String args[])
+
+{
+
+Figure f; 
+
+Rectangle r= new Rectangle(5,5);
+
+f=r;
+
+System.out.println("Area of Rectangle is:"+f.area());
+
+}
+
+}
